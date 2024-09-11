@@ -1,0 +1,21 @@
+.site-list {
+  list-style-type: none;
+  background-color: #ffffff;
+}
+
+.site-list__item {
+  font-family: $secondary-font;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.site-list__link {
+  color: $additional-font-color;
+  text-decoration: none;
+}
+
+.site-list__link--current {
+  //стили//
+}

@@ -1,0 +1,20 @@
+.product-use {
+  background-color: #ffffff;
+}
+
+.product-use__title {
+  color: $additional-font-color;
+  font-family: $secondary-font;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.product-use__list {
+  list-style-type: none;
+}
+
+.product-use__item {
+  font-size: 14px;
+  line-height: 18px;
+}
