@@ -1,5 +1,7 @@
 .point {
-  display: block;
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
 }
 
 .point--one::before {
@@ -12,6 +14,8 @@
   background-color: $green-font-color;
   width: 60px;
   height: 60px;
+  flex-shrink: 0;
+  margin-right: 20px;
 }
 
 .point--two::before {
@@ -24,6 +28,8 @@
   background-color: $green-font-color;
   width: 60px;
   height: 60px;
+  flex-shrink: 0;
+  margin-right: 20px;
 }
 
 .point--three::before {
@@ -36,6 +42,8 @@
   background-color: $green-font-color;
   width: 60px;
   height: 60px;
+  flex-shrink: 0;
+  margin-right: 20px;
 }
 
 .point--four::before {
@@ -48,4 +56,61 @@
   background-color: $green-font-color;
   width: 60px;
   height: 60px;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .point--one::after {
+    counter-increment: number;
+    content: counter(number) "";
+    position: absolute;
+    right: 0;
+    font-family: $secondary-font;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    text-align: end;
+    z-index: -1;
+  }
+
+  .point--two::after {
+    counter-increment: number;
+    content: counter(number) "";
+    position: absolute;
+    right: 0;
+    font-family: $secondary-font;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    text-align: end;
+    z-index: -1;
+  }
+
+  .point--three::after {
+    counter-increment: number;
+    content: counter(number) "";
+    position: absolute;
+    right: 0;
+    font-family: $secondary-font;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    text-align: end;
+    z-index: -1;
+  }
+
+  .point--four::after {
+    counter-increment: number;
+    content: counter(number) "";
+    position: absolute;
+    right: 0;
+    font-family: $secondary-font;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    text-align: end;
+    z-index: -1;
+  }
 }

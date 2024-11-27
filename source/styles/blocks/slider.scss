@@ -1,17 +1,44 @@
 .slider {
-  //стили//
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.slider__wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider__wrapper--before {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.slider__wrapper--after {
+  grid-column: 2/3;
+  grid-row: 1/2;
 }
 
 .slider__image {
-  //стили//
+  display: block;
 }
 
 .slider__image--before {
-  //стили//
+  width: 280px;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+  }
 }
 
 .slider__image--after {
-  //стили//
+  width: 280px;
+  height: auto;
+  transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+  }
 }
 
 .slider__button {
@@ -22,7 +49,15 @@
   height: 256px;
   border-radius: 2px;
   border: none;
-  left: 20px;
+  left: 0;
+  z-index: 10;
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  justify-self: center;
+
+  @media (min-width: $tablet-width) {
+    height: 512px;
+  }
 }
 
 .slider__button::before {
@@ -34,7 +69,7 @@
   background-color: #ffffff;
   width: 40px;
   height: 40px;
-  transform: translate(-50%, -50%);
+  transform: translate(-45%, -50%);
 }
 
 .slider__button::after {
@@ -45,5 +80,5 @@
   mask-image: url("../../icons/stack.svg#slider-button-icon");
   width: 24px;
   height: 18px;
-  transform: translate(-50%, -50%);
+  transform: translate(-40%, -50%);
 }

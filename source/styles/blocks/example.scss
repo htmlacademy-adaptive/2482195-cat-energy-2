@@ -1,5 +1,29 @@
 .example {
   background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid #e6e6e6;
+    background: linear-gradient(to top, #eaeaea 462px, #ffffff 462px);
+  }
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(to top, #eaeaea 462px, #ffffff 135px);
+    border-top: none;
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    gap: 224px;
+  }
+}
+
+.example__information {
+  @media (min-width: $desktop-width) {
+    width: 436px;
+  }
 }
 
 .example__title {
@@ -8,19 +32,77 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 45px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .example__description {
   font-size: 14px;
   line-height: 18px;
+  margin: 0;
+  padding-bottom: 55px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 146px;
+    padding-bottom: 69px;
+  }
+}
+
+.example__stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 60px;
+  }
 }
 
 .example__list {
+  display: flex;
+  justify-content: space-between;
   list-style-type: none;
+  gap: 28px;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .example__item {
-  //стили//
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  min-width: 124px;
+  text-align: center;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    min-width: 162px;
+  }
 }
 
 .example__number {
@@ -29,30 +111,93 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
+  margin: 15px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #eaeaea;
+  }
 }
 
 .example__value {
+  position: absolute;
+  display: block;
   font-size: 14px;
   line-height: 14px;
+  margin: 0;
+  top: 45px;
+  left: 18px;
+  max-width: 87px;
+  background: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+    top: 58px;
+    left: 10px;
+    min-width: 142px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #eaeaea;
+  }
 }
 
 .example__cost {
   color: $additional-font-color;
   font-family: $secondary-font;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  display: flex;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    max-width: 174px;
+    height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 330px;
+    justify-content: space-between;
+  }
 }
 
 .example__cost-title {
-  //стили//
+  margin: 0;
+  padding-right: 7px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .example__cost-number {
-  //стили//
+  margin: 0;
+  padding: 0;
 }
 
 .example__slider {
-  //стили//
+  margin: 0 auto;
+  width: 280px;
+  margin-top: 20px;
+  padding-bottom: 40px;
+
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    padding-bottom: 101px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-bottom: 85px;
+  }
 }

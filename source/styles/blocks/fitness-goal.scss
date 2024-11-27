@@ -4,11 +4,38 @@
 
 .fitness-goal__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 69px;
+    justify-content: space-between;
+  }
 }
 
 .fitness-goal__item {
   position: relative;
   background-color: #f2f2f2;
+  padding: 30px 33px 18px 20px;
+  margin-bottom: 20px;
+  flex: 0 0 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 316px 83px 52px;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex: 0 0 37%;
+    padding: 77px 61px 55px 52px;
+    margin-bottom: 0;
+  }
 }
 
 .fitness-goal__item--slim::after {
@@ -20,8 +47,24 @@
   background-size: 50px 53px;
   width: 50px;
   height: 53px;
-  top: 0;
-  left: 0;
+  top: 21px;
+  left: 20px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 200px 211px;
+    width: 200px;
+    height: 211px;
+    top: 81px;
+    left: calc(100% - 253px);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 100px 106px;
+    width: 100px;
+    height: 106px;
+    top: 41px;
+    left: 52px;
+  }
 }
 
 .fitness-goal__item--gain::after {
@@ -33,8 +76,25 @@
   background-size: 67px 50px;
   width: 67px;
   height: 50px;
-  top: 0;
-  left: 0;
+  top: 24px;
+  left: 13px;
+
+
+  @media (min-width: $tablet-width) {
+    background-size: 268px 200px;
+    width: 268px;
+    height: 200px;
+    top: 91px;
+    left: calc(100% - 287px);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 134px 100px;
+    width: 134px;
+    height: 100px;
+    top: 41px;
+    left: 52px;
+  }
 }
 
 .fitness-goal__title {
@@ -44,11 +104,36 @@
   font-weight: 400;
   line-height: 37px;
   text-transform: uppercase;
+  margin: 0;
+  padding-left: 90px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 162px;
+  }
 }
 
 .fitness-goal__description {
   font-size: 14px;
   line-height: 18px;
+  border-bottom: 1px solid #d9d9d9;
+  padding-top: 29px;
+  padding-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    margin: 0;
+    padding-top: 24px;
+    padding-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 73px;
+    padding-bottom: 23px;
+  }
 }
 
 .fitness-goal__link {
@@ -58,6 +143,7 @@
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .fitness-goal__link::after {
@@ -69,5 +155,5 @@
   width: 24px;
   height: 12px;
   top: 7px;
-  left: 100px;
+  left: 102px;
 }

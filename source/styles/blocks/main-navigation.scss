@@ -1,9 +1,23 @@
 .main-navigation {
-  //стили//
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+  }
 }
 
 .main-navigation__logo {
   text-decoration: none;
+  height: 65px;
+  padding: 0;
 }
 
 .main-navigation__toggle--close {
@@ -17,8 +31,31 @@
   width: 24px;
   height: 24px;
   border: none;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .main-navigation__toggle {
+    display: none;
+  }
 }
 
 .main-navigation__list {
-  //стили//
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+    max-width: 436px;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 475px;
+  }
 }

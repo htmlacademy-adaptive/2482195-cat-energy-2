@@ -1,11 +1,36 @@
 .logo {
-  //стили//
+  display: flex;
+  align-items: center;
+  gap: 40%;
+
+
+  @media (min-width: $tablet-width) {
+    gap: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 14px;
+  }
 }
 
 .logo__trademark {
-  //стили//
+  display: block;
+  width: 33px;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+  }
 }
 
 .logo__text {
-  //стили//
+  display: block;
+  width: 101px;
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+  }
 }
