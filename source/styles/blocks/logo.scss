@@ -1,7 +1,7 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 40%;
+  gap: 42%;
 
 
   @media (min-width: $tablet-width) {
@@ -47,8 +47,15 @@
 .logo__text {
   display: block;
   width: 101px;
+  height: 18px;
 
   @media (min-width: $desktop-width) {
     width: 118px;
+    height: 21px;
   }
+}
+
+.logo__text-footer {
+  width: 128px;
+  height: 24px;
 }

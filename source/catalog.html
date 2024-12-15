@@ -15,7 +15,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header main-header--nojs">
+  <header class="main-header main-header--nojs" data-test="header">
     <div class="container">
       <div class="main-header__wrapper">
         <a class="main-header__logo logo" href="index.html">
@@ -45,14 +45,17 @@
       </div>
     </div>
   </header>
-  <main class="main-container">
-    <section class="product-catalog">
+  <main class="main-container" data-test="main">
+    <section class="product-catalog" data-test="product-catalog">
       <div class="container">
         <h2 class="product-catalog__title">Каталог продукции</h2>
         <ul class="product-catalog__list">
           <li class="product-catalog__item card">
             <a class="card__link card__link-image" href="#">
               <picture>
+                <source media="(min-width: 1220px)" width="169" height="210" srcset="images/card-can-chicken500-desktop@1x.webp 1x, images/card-can-chicken500-desktop@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" width="200" height="210" srcset="images/card-can-chicken500-tablet@1x.webp 1x, images/card-can-chicken500-tablet@2x.webp 2x" type="image/webp">
+                <source srcset="images/card-can-chicken500-mobile@1x.webp 1x, images/card-can-chicken500-mobile@2x.webp 2x" width="140" height="107" type="image/webp">
                 <source media="(min-width: 1220px)" width="169" height="210" srcset="images/card-can-chicken500-desktop@1x.png 1x, images/card-can-chicken500-desktop@2x.png 2x" type="image/png">
                 <source media="(min-width: 768px)" width="200" height="210" srcset="images/card-can-chicken500-tablet@1x.png 1x, images/card-can-chicken500-tablet@2x.png 2x" type="image/png">
                 <img class="card__image" src="images/card-can-chicken500-mobile@1x.png" srcset="images/card-can-chicken500-mobile@2x.png 2x" width="140" height="107" alt="Корм Cat Energy PRO 500 г со вкусом курицы">
@@ -82,6 +85,9 @@
           <li class="product-catalog__item card">
             <a class="card__link card__link-image" href="#">
               <picture>
+                <source media="(min-width: 1220px)" width="169" height="210" srcset="images/card-can-chicken1000-desktop@1x.webp 1x, images/card-can-chicken1000-desktop@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" width="200" height="210" srcset="images/card-can-chicken1000-tablet@1x.webp 1x, images/card-can-chicken1000-tablet@2x.webp 2x" type="image/webp">
+                <source srcset="images/card-can-chicken1000-mobile@1x.webp 1x, images/card-can-chicken1000-mobile@2x.webp 2x" width="140" height="107" type="image/webp">
                 <source media="(min-width: 1220px)" width="169" height="210" srcset="images/card-can-chicken1000-desktop@1x.png 1x, images/card-can-chicken1000-desktop@2x.png 2x" type="image/png">
                 <source media="(min-width: 768px)" width="200" height="210" srcset="images/card-can-chicken1000-tablet@1x.png 1x, images/card-can-chicken1000-tablet@2x.png 2x" type="image/png">
                 <img class="card__image" src="images/card-can-chicken1000-mobile@1x.png" srcset="images/card-can-chicken1000-mobile@2x.png 2x" width="140" height="107" alt="Корм Cat Energy PRO 1000 г со вкусом курицы">
@@ -111,6 +117,9 @@
           <li class="product-catalog__item card">
             <a class="card__link card__link-image" href="#">
               <picture>
+                <source media="(min-width: 1220px)" width="169" height="210" srcset="images/card-can-fish500-desktop@1x.webp 1x, images/card-can-fish500-desktop@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" width="200" height="210" srcset="images/card-can-fish500-tablet@1x.webp 1x, images/card-can-fish500-tablet@2x.webp 2x" type="image/webp">
+                <source srcset="images/card-can-fish500-mobile@1x.webp 1x, images/card-can-fish500-mobile@2x.webp 2x" width="140" height="107" type="image/webp">
                 <source media="(min-width: 1220px)" width="169" height="210" srcset="images/card-can-fish500-desktop@1x.png 1x, images/card-can-fish500-desktop@2x.png 2x" type="image/png">
                 <source media="(min-width: 768px)" width="200" height="210" srcset="images/card-can-fish500-tablet@1x.png 1x, images/card-can-fish500-tablet@2x.png 2x" type="image/png">
                 <img class="card__image" src="images/card-can-fish500-mobile@1x.png" srcset="images/card-can-fish500-mobile@2x.png 2x" width="140" height="107" alt="Корм Cat Energy PRO 500 г со вкусом рыбы">
@@ -140,6 +149,9 @@
           <li class="product-catalog__item card">
             <a class="card__link card__link-image" href="#">
               <picture>
+                <source media="(min-width: 1220px)" width="169" height="210" srcset="images/card-can-fish1000-desktop@1x.webp 1x, images/card-can-fish1000-desktop@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" width="200" height="210" srcset="images/card-can-fish1000-tablet@1x.webp 1x, images/card-can-fish1000-tablet@2x.webp 2x" type="image/webp">
+                <source srcset="images/card-can-fish1000-mobile@1x.webp 1x, images/card-can-fish1000-mobile@2x.webp 2x" width="140" height="107" type="image/webp">
                 <source media="(min-width: 1220px)" width="169" height="210" srcset="images/card-can-fish1000-desktop@1x.png 1x, images/card-can-fish1000-desktop@2x.png 2x" type="image/png">
                 <source media="(min-width: 768px)" width="200" height="210" srcset="images/card-can-fish1000-tablet@1x.png 1x, images/card-can-fish1000-tablet@2x.png 2x" type="image/png">
                 <img class="card__image" src="images/card-can-fish1000-mobile@1x.png" srcset="images/card-can-fish1000-mobile@2x.png 2x" width="140" height="107" alt="Корм Cat Energy PRO 1000 г со вкусом рыбы">
@@ -156,7 +168,7 @@
                 </li>
                 <li class="card__item">
                   <span class="card__parameter">Вкус</span>
-                  <span class="card__value">Рыбы</span>
+                  <span class="card__value">Рыба</span>
                 </li>
                 <li class="card__item">
                   <span class="card__parameter">Цена</span>
@@ -169,6 +181,9 @@
           <li class="product-catalog__item card">
             <a class="card__link card__link-image" href="#">
               <picture>
+                <source media="(min-width: 1220px)" width="169" height="210" srcset="images/card-can-buckwheat500-desktop@1x.webp 1x, images/card-can-buckwheat500-desktop@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" width="200" height="210" srcset="images/card-can-buckwheat500-tablet@1x.webp 1x, images/card-can-buckwheat500-tablet@2x.webp 2x" type="image/webp">
+                <source srcset="images/card-can-buckwheat500-mobile@1x.webp 1x, images/card-can-buckwheat500-mobile@2x.webp 2x" width="140" height="107" type="image/webp">
                 <source media="(min-width: 1220px)" width="169" height="210" srcset="images/card-can-buckwheat500-desktop@1x.png 1x, images/card-can-buckwheat500-desktop@2x.png 2x" type="image/png">
                 <source media="(min-width: 768px)" width="200" height="210" srcset="images/card-can-buckwheat500-tablet@1x.png 1x, images/card-can-buckwheat500-tablet@2x.png 2x" type="image/png">
                 <img class="card__image" src="images/card-can-buckwheat500-mobile@1x.png" srcset="images/card-can-buckwheat500-mobile@2x.png 2x" width="140" height="107" alt="Корм Cat Energy SLIM 500 г с гречкой">
@@ -198,6 +213,9 @@
           <li class="product-catalog__item card">
             <a class="card__link card__link-image" href="#">
               <picture>
+                <source media="(min-width: 1220px)" width="169" height="210" srcset="images/card-can-buckwheat1000-desktop@1x.webp 1x, images/card-can-buckwheat1000-desktop@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" width="200" height="210" srcset="images/card-can-buckwheat1000-tablet@1x.webp 1x, images/card-can-buckwheat1000-tablet@2x.webp 2x" type="image/webp">
+                <source srcset="images/card-can-buckwheat1000-mobile@1x.webp 1x, images/card-can-buckwheat1000-mobile@2x.webp 2x" width="140" height="107" type="image/webp">
                 <source media="(min-width: 1220px)" width="169" height="210" srcset="images/card-can-buckwheat1000-desktop@1x.png 1x, images/card-can-buckwheat1000-desktop@2x.png 2x" type="image/png">
                 <source media="(min-width: 768px)" width="200" height="210" srcset="images/card-can-buckwheat1000-tablet@1x.png 1x, images/card-can-buckwheat1000-tablet@2x.png 2x" type="image/png">
                 <img class="card__image" src="images/card-can-buckwheat1000-mobile@1x.png" srcset="images/card-can-buckwheat1000-mobile@2x.png 2x" width="140" height="107" alt="Корм Cat Energy SLIM 1000 г с гречкой">
@@ -227,6 +245,9 @@
           <li class="product-catalog__item card">
             <a class="card__link card__link-image" href="#">
               <picture>
+                <source media="(min-width: 1220px)" width="169" height="210" srcset="images/card-can-rice500-desktop@1x.webp 1x, images/card-can-rice500-desktop@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" width="200" height="210" srcset="images/card-can-rice500-tablet@1x.webp 1x, images/card-can-rice500-tablet@2x.webp 2x" type="image/webp">
+                <source srcset="images/card-can-rice500-mobile@1x.webp 1x, images/card-can-rice500-mobile@2x.webp 2x" width="140" height="107" type="image/webp">
                 <source media="(min-width: 1220px)" width="169" height="210" srcset="images/card-can-rice500-desktop@1x.png 1x, images/card-can-rice500-desktop@2x.png 2x" type="image/png">
                 <source media="(min-width: 768px)" width="200" height="210" srcset="images/card-can-rice500-tablet@1x.png 1x, images/card-can-rice500-tablet@2x.png 2x" type="image/png">
                 <img class="card__image" src="images/card-can-rice500-mobile@1x.png" srcset="images/card-can-rice500-mobile@2x.png 2x" width="140" height="107" alt="Корм Cat Energy SLIM 500 г с рисом">
@@ -263,7 +284,7 @@
         </ul>
       </div>
     </section>
-    <section class="additional-products">
+    <section class="additional-products" data-test="additional-products">
       <div class="container">
         <h2 class="additional-products__title">Дополнительные товары</h2>
         <div class="additional-products__wrapper">
@@ -281,7 +302,7 @@
               <ul class="card-goods__list">
                 <li class="card-goods__item">
                   <span class="card-goods__amount">5 литров</span>
-                  <span class="card-goods__value">200 ₽</span>
+                  <span class="card-goods__value">50 ₽</span>
                 </li>
               </ul>
               <a class="card-goods__button button" href="#">Заказать</a>
@@ -290,7 +311,7 @@
               <ul class="card-goods__list">
                 <li class="card-goods__item">
                   <span class="card-goods__amount">1 литр</span>
-                  <span class="card-goods__value">200 ₽</span>
+                  <span class="card-goods__value">100 ₽</span>
                 </li>
               </ul>
               <a class="card-goods__button button" href="#">Заказать</a>
@@ -299,19 +320,19 @@
               <ul class="card-goods__list">
                 <li class="card-goods__item">
                   <span class="card-goods__amount">1 упаковка (30 г)</span>
-                  <span class="card-goods__value">200 ₽</span>
+                  <span class="card-goods__value">300 ₽</span>
                 </li>
               </ul>
               <a class="card-goods__button button" href="#">Заказать</a>
             </li>
           </ul>
           <div class="additional-products__banner purchase-gift">
-            <p class="purchase-gift__description">Закажите все и получите чехол для кота в подарок!</p>
+            <p class="purchase-gift__description">Закажите все <br> и получите чехол для кота в подарок!</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="special-offers">
+    <section class="special-offers" data-test="special-offers">
       <div class="container">
         <h2 class="special-offers__title">Акции и новинки</h2>
         <p class="special-offers__description">
@@ -324,11 +345,12 @@
         </form>
       </div>
     </section>
-    <section class="cooperation">
+    <section class="cooperation" data-test="cooperation">
       <div class="cooperation__wrapper-text container">
         <div class="cooperation__information">
           <h2 class="cooperation__title">Приглашаем<br> к сотрудничеству дилеров!</h2>
-          <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8
+            <span>Санкт-Петербург</span>
           </address>
         </div>
       </div>
@@ -336,6 +358,9 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3728.9678222221423!2d30.321406051636686!3d59.93848278087858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca3de3a1%3A0xba80b1be36549aba!2sHtml%20Academy!5e0!3m2!1sru!2sru!4v1733597176317!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <noscript>
           <picture>
+            <source media="(min-width: 1220px)" width="169" height="210" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 768px)" width="200" height="210" srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x" type="image/webp">
+            <source srcset="images/map-mobile@1x.webp 1x, images/map-mobile@2x.webp 2x" width="140" height="107" type="image/webp">
             <source media="(min-width: 1220px)" width="1220" height="400" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x" type="image/jpg">
             <source media="(min-width: 768px)" width="768" height="400" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x" type="image/jpg">
             <img class="cooperation__img" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Карта с расположением офиса компании">
@@ -344,12 +369,12 @@
       </div>
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer" data-test="footer">
     <div class="container">
       <div class="main-footer__module">
         <div class="main-footer__wrapper">
           <a class="main-footer__logo logo" href="index.html">
-            <img class="logo__text" src="images/logo-text.svg" width="128" height="24" alt="Cat energy">
+            <img class="logo__text logo__text-footer" src="images/logo-text.svg" width="128" height="24" alt="Cat energy">
           </a>
         </div>
         <div class="main-footer__wrapper">
