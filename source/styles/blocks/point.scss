@@ -1,0 +1,147 @@
+.point {
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-wrap: wrap;
+    gap: 31px;
+  }
+}
+
+.point--one::before {
+  content: "";
+  display: block;
+  background-image: url("../../icons/stack.svg#leaf-icon");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px 28px;
+  background-color: $green-font-color;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    margin-right: 0;
+  }
+}
+
+.point--two::before {
+  content: "";
+  display: block;
+  background-image: url("../../icons/stack.svg#powder-icon");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px 28px;
+  background-color: $green-font-color;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    margin-right: 0;
+  }
+}
+
+.point--three::before {
+  content: "";
+  display: block;
+  background-image: url("../../icons/stack.svg#meal-icon");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px 30px;
+  background-color: $green-font-color;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    margin-right: 0;
+  }
+}
+
+.point--four::before {
+  content: "";
+  display: block;
+  background-image: url("../../icons/stack.svg#clock-icon");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 26px 30px;
+  background-color: $green-font-color;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .point--one::after {
+    counter-increment: number;
+    content: counter(number) "";
+    position: absolute;
+    top: -40px;
+    right: 5px;
+    font-family: $secondary-font;
+    font-size: 280px;
+    line-height: 280px;
+    color: $additional-bg-color;
+    text-align: end;
+    z-index: -1;
+  }
+
+  .point--two::after {
+    counter-increment: number;
+    content: counter(number) "";
+    position: absolute;
+    top: -40px;
+    right: 0;
+    font-family: $secondary-font;
+    font-size: 280px;
+    line-height: 280px;
+    color: $additional-bg-color;
+    text-align: end;
+    z-index: -1;
+  }
+
+  .point--three::after {
+    counter-increment: number;
+    content: counter(number) "";
+    position: absolute;
+    top: -40px;
+    right: -17px;
+    font-family: $secondary-font;
+    font-size: 280px;
+    line-height: 280px;
+    color: $additional-bg-color;
+    text-align: end;
+    z-index: -1;
+  }
+
+  .point--four::after {
+    counter-increment: number;
+    content: counter(number) "";
+    position: absolute;
+    top: -40px;
+    right: -3px;
+    font-family: $secondary-font;
+    font-size: 280px;
+    line-height: 280px;
+    color: $additional-bg-color;
+    text-align: end;
+    z-index: -1;
+  }
+}

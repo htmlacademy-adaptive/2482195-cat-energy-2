@@ -1,0 +1,61 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 42%;
+
+
+  @media (min-width: $tablet-width) {
+    gap: 13px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 14px;
+  }
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.6;
+}
+
+.logo__trademark.logo__text:hover {
+  color: $additional-accent-color;
+}
+
+.logo__trademark.logo__text:active {
+  color: $additional-accent-color;
+}
+
+.logo__trademark {
+  display: block;
+  width: 33px;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+  }
+}
+
+.logo__text {
+  display: block;
+  width: 101px;
+  height: 18px;
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
+  }
+}
+
+.logo__text-footer {
+  width: 128px;
+  height: 24px;
+}

@@ -1,0 +1,22 @@
+.main-navigation {
+  color: inherit;
+}
+
+.main-navigation__list {
+  margin: 0;
+  padding: 0;
+
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+    max-width: 475px;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 475px;
+  }
+}
